@@ -6,7 +6,7 @@ Collecting data from https://coinmarketcap.com/
 Concept
 ----------------
 
-Endpoints are published on coinmarketcap every five minutes and requests are limited to ten per minute (https://coinmarketcap.com/api/). In order to collect this data we use the Python BeautifulSoup and Requests library. To collect the data repeatedly we implement a crontab that runs a bash script (cmc_scrp_run.sh) that activates a virtual environment and then runs the python script (cmc_scrp.py).
+Endpoints are published on coinmarketcap every five minutes and requests are limited to ten per minute (https://coinmarketcap.com/api/). To beat the APIs efficiency we extract the data from the web page every five minutes. In order to collect this data we use the Python BeautifulSoup and Requests library. To collect the data repeatedly we implement a crontab that runs a bash script (cmc_scrp_run.sh) that activates a virtual environment and then runs the python script (cmc_scrp.py).
 
 Requirements
 -------
